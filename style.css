@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0f172a;   /* Dark background */
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+nav {
+    width: 100%;
+    background-color: #020617;
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.link a:hover {
+    color: #38bdf8;
+}
+
+.contact-btn a {
+    padding: 8px 14px;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.image img {
+    width: 320px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content h1 span {
+    color: #38bdf8;
+}
+
+.typewriter {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #cbd5f5;
+}
+
+.content p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: #cbd5f5;
+}
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    color: #e5e7eb;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+}
+
+.btn button {
+    padding: 10px 22px;
+    background-color: #38bdf8;
+    color: #020617;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #0ea5e9;
+}
+.image {
+    width: 500px;
+    height: 450px;
+    margin: auto;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00adb5;
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.5);
+}
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 50px;
+    }
+
+    .content p {
+        margin: auto;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
